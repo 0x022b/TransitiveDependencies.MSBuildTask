@@ -2,7 +2,7 @@ type file
 id TransitiveDependencies.MSBuildTask
 version 1.0.0
 authors Janne K
-projectUrl https://github.com/scoobadog/TransitiveDependencies.MSBuildTask
+projectUrl https://github.com/0x022b/TransitiveDependencies.MSBuildTask
 developmentDependency true
 description
 	Copies transitive project dependencies recursively in MSBuild.
