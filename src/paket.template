@@ -1,6 +1,6 @@
 type file
 id TransitiveDependencies.MSBuildTask
-version 1.0.0
+version 1.1.0
 authors Janne K
 projectUrl https://github.com/0x022b/TransitiveDependencies.MSBuildTask
 developmentDependency true
