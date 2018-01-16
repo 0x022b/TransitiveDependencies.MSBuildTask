@@ -59,6 +59,14 @@ do{
 		doc.Load(projectReference);
 		var nsmgr = new XmlNamespaceManager(doc.NameTable);
 		nsmgr.AddNamespace("msb", "http://schemas.microsoft.com/developer/msbuild/2003");
+
+		// Skip projects that are in the new lean format
+		var projNode = doc.SelectSingleNode("/Project", nsmgr);
+		if (projNode != null && projNode.Attributes["Sdk"] != null)
+		{
+			continue;
+		}
+
 		var projectDirectory = Path.GetDirectoryName(projectReference);
 
 		// Find all project references we haven't already seen
