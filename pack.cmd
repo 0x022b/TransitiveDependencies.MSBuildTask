@@ -1,2 +1,2 @@
 @echo off
-".paket\paket.exe" pack output bin buildplatform AnyCPU
+".paket\paket.exe" pack --build-platform AnyCPU bin
